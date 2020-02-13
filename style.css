@@ -1,0 +1,19 @@
+body{
+    /* margin-top: 70px; */
+    background-color: #111;
+    background-size: cover;
+    color: #fff;
+}
+.dark-overlay{
+    background-image:url(./img/person-using-laptop-computer-during-daytime-196655.jpg);
+    opacity: 0.8;
+    background-size: cover;
+    height: 100%;
+    /* padding-bottom: 50px; */
+    
+}
+.soc :hover{
+    transform: scale(1.1);
+    transition: .9s;
+}
+

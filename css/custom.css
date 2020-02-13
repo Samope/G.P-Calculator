@@ -1,0 +1,13 @@
+.navbar-dark{
+background-color:rgb(145, 31, 31);
+}
+.container{
+    background-color:brown;
+}
+.navbar .navbar-brand img{
+    height: 69px;
+    height: 69px;
+}
+.navbar .navbar-brand .navbar-nav li{
+    color: black;
+}
