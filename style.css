@@ -1,14 +1,16 @@
 body{
     /* margin-top: 70px; */
-    background-color: #111;
+    background-color: #111 no-repeat;
     background-size: cover;
     color: #fff;
 }
 .dark-overlay{
-    background-image:url(./img/person-using-laptop-computer-during-daytime-196655.jpg);
-    opacity: 0.8;
+    background:url(./img/person-using-laptop-computer-during-daytime-196655.jpg) no-repeat;
+    opacity: 0.85;
     background-size: cover;
-    height: 100%;
+    width:100%; 
+    min-height: 700px;
+    background-position: fixed;
     /* padding-bottom: 50px; */
     
 }

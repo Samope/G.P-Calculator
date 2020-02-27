@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>S' Weight converter</title>
+    <title>S' G.P Cal</title>
     <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css">
     <link rel="stylesheet" href="./style.css">
@@ -16,70 +16,206 @@
         <h1 class="bg-light p-2"><b class="text-primary m-2">S</b><b class="text-success">'</b> <b
                 class="text-danger">WOR<b class="text-info">LD</b></h1 class="bg-primary">
         <div class="container text-white">
-            <div class="row">
-                <div class="col-lg-6 offset-md-3">
-                    <h1 class="display-3  text-dark text-center mb-3">
-                        Weight Converter
-                    </h1>
-                    <form action="" class="mb-3 p-2">
-                        <div class="form-group">
-                            <input type="number" class="form-control form-control-lg" id="lbsInput"
-                                placeholder="Enter Pounds">
-                        </div>
-                    </form>
-                    <div id="output">
-                        <div class="card bg-primary text-center mb-2 p-2">
-                            <div class="card-block">
-                                <h4 class="">
-                                    Grams
-                                </h4>
-                                <div id="gramsOutput"></div>
-                            </div>
-                        </div>
-                        <div class="card bg-success text-center mb-2 p-2">
-                            <div class="card-block">
-                                <h4>
-                                    Kilograms
-                                </h4>
-                                <div id="KgOutput"></div>
-                            </div>
-                        </div>
-                        <div class="card bg-warning mb-2 text-center p-2">
-                            <div class="card-block">
-                                <h4>
-                                    Ounce
-                                </h4>
-                                <div id="ozOutput"></div>
-                            </div>
-                        </div>
-                    </div>
+            <h1 style="border-bottom:2px solid black" class="display-3  text-dark text-center mb-4">
+                G.P Cal
+            </h1>
+            <section class="d-md-flex">
+                <div class="col-md-4 d-lg-block d-md-block bg-light">
+                    <h1 class="text-danger text-center mb-2">How <strong class="text-warning">to Check</strong> your
+                        <strong>G.P</strong></h1>
+                    <hr>
+                    <ol class=" rounded h4 text-dark font-weight-bold">
+                        <li>
+                            <p>Carefully Read the Instructions.</p>
+                        </li>
+                        <li>
+                            <p>Enter Your Score in the Input Box provided.</p>
+                        </li>
+                        <li>
+                            <p>Goodluck.</p>
+                        </li>
+                    </ol>
 
                 </div>
-            </div>
-        </div>
-    </div>
-    <footer id="main-footer" class="py-3 text-dark bg-light">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12 ml-auto">
-                    <h1 class="text-info">Contact</h1>
-                    <span><i class="fas fa-phone h5 text-dark">&nbsp;07033747082</i></span><br>
-                    <span> <i class="fas fa-envelope text-dark"> &nbsp; officialsamope@gmail.com</i> </span><br>
-                    <div class="soc">
-                        <a href=""><img src="./img/facebook-512.png" width="32x32" alt=""></i></a>
-                        <a href=""><img src="./img/Whatsapp-512.png" width="45x45" alt=""></i></a>
-                        <a href=""><img src="./img/twitter_PNG9.png" width="32x32" alt=""></i></a>
-                        <a href=""><img src="./img/instacolored.png" width="32x32" alt=""></i></a>
+                <div class="col-lg-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <h1 class="text-danger font-weight-bold text-center mb-3">
+                                    MTH 101
+                                </h1>
+                                <!-- enter score -->
+                                <div class="col">
+                                    <form action="" class="mb-3 p-2">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control form-control-lg" id="lbsInput"
+                                                placeholder="Enter Score">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- stop -->
+                                <div id="output">
+                                    <div class="card bg-primary text-center mb-2 p-2">
+                                        <div class="card-block">
+                                            <h4 class="lead">
+                                                Grade
+                                            </h4>
+                                            <div id="gramsOutput"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-success text-center mb-2 p-2">
+                                        <div class="card-block">
+                                            <h4>
+                                                Grade value
+                                            </h4>
+                                            <div id="KgOutput"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-warning mb-5 text-center p-2">
+                                        <div class="card-block">
+                                            <h4>
+                                                Course Units
+                                            </h4>
+                                            <div id="ozOutput"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mth 102 section -->
+                            <div class="col-md-4 col-lg-4">
+                                <h1 class="text-danger font-weight-bold text-center mb-3">
+                                    MTH 102
+                                </h1>
+                                <!-- enter score -->
+                                <div class="col">
+                                    <form action="" class="mb-3 p-2">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control form-control-lg" id="102Input"
+                                                placeholder="Enter Score">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- stop -->
+                                <div id="102output">
+                                    <div class="card bg-primary text-center mb-2 p-2">
+                                        <div class="card-block">
+                                            <h4 class="lead">
+                                                Grade
+                                            </h4>
+                                            <div id="102"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-success text-center mb-2 p-2">
+                                        <div class="card-block">
+                                            <h4>
+                                                Grade value
+                                            </h4>
+                                            <div id="Kg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-warning mb-5 text-center p-2">
+                                        <div class="card-block">
+                                            <h4>
+                                                Course Units
+                                            </h4>
+                                            <div id="Oz"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- mth 103 section -->
+                            <div class="col-md-4 col-lg-4">
+                                <h1 class="text-danger font-weight-bold text-center mb-3">
+                                    MTH 103
+                                </h1>
+                                <!-- enter score -->
+                                <div class="col">
+                                    <form action="" class="mb-3 p-2">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control form-control-lg" id="103Input"
+                                                placeholder="Enter Score">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- stop -->
+                                <div id="103output">
+                                    <div class="card bg-primary text-center mb-2 p-2">
+                                        <div class="card-block">
+                                            <h4 class="lead">
+                                                Grade
+                                            </h4>
+                                            <div id="103"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-success text-center mb-2 p-2">
+                                        <div class="card-block">
+                                            <h4>
+                                                Grade value
+                                            </h4>
+                                            <div id="K3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-warning mb-5 text-center p-2">
+                                        <div class="card-block">
+                                            <h4>
+                                                Course Units
+                                            </h4>
+                                            <div id="O3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-muted">Copyright &copy;2020 | S' World</p>
+                </div>
+            </section>
+
+            <!-- check -->
+            <div class="col text-center my-5">
+                <button class="btn btn-info btn-lg btn-block mb-3" onclick="total()">See G.P</button>
+            </div>
+            <div class="d-flex">
+                <div class="col-md-6 text-center">
+                    <div class="card bg-success">
+                        <div class=" card-body text-weight-bold">G.P</div>
+                        <!-- gp result -->
+                        <div class="pb-4" id="gp"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="card bg-danger  text-white mb-5">
+                        <div class="card-body">Grade</div>
+                        <!-- gp grade -->
+                        <div class="pb-4" id="g"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="./index.js"></script>
-    <script src="./stylesheet/js/jquery_3.3.1.js"></script>
-    <script src="./stylesheet/js/popper.min.js"></script>
-    <script src="./stylesheet/js/bootstrap.js"></script>
+        <!-- footer -->
+        <footer id="main-footer" class="text-dark bg-light">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <h1 class="text-info">Contact</h1>
+                        <span><i class="fas fa-phone h5 text-dark">&nbsp;07033747082</i></span><br>
+                        <span> <i class="fas fa-envelope text-dark"> &nbsp; officialsamope@gmail.com</i> </span><br>
+                        <div class="soc">
+                            <a href="https://web.facebook.com/profile.php?id=100008385792805"><img
+                                    src="./img/facebook-512.png" width="32x32" alt=""></i></a>
+                            <a href=""><img src="./img/Whatsapp-512.png" width="45x45" alt=""></i></a>
+                            <a href=""><img src="./img/twitter_PNG9.png" width="32x32" alt=""></i></a>
+                            <a href=""><img src="./img/instacolored.png" width="32x32" alt=""></i></a>
+                        </div>
+                        <p class="text-muted">Copyright &copy;2020 | S' World</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./index.js"></script>
+        <script src="./stylesheet/js/jquery_3.3.1.js"></script>
+        <script src="./stylesheet/js/popper.min.js"></script>
+        <script src="./stylesheet/js/bootstrap.js"></script>
 
 </body>
 
