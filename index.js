@@ -175,13 +175,14 @@ document.getElementById('103Input').addEventListener('input', function (e) {
 
  var grade;
  function total(){
-     var mth1 = parseInt(document.getElementById('lbsInput').value);
-     var mth2 = parseInt(document.getElementById('102Input').value);
-     var mth3 = parseInt(document.getElementById('103Input').value);
+     var mth1 = parseInt(document.getElementById('KgOutput').innerHTML);
+     var mth2 = parseInt(document.getElementById('Kg').innerHTML);
+     var mth3 = parseInt(document.getElementById('K3').innerHTML);
 
      var total = mth1 + mth2 + mth3;
-     grade = total/60;
+     grade = total/3;
      document.getElementById(`gp`).textContent = `G.P:` + grade;
+     window.alert("Goodluck check your G.P");
 
      if (grade > 5.00) {
         document.getElementById(`g`).innerHTML=('Oops! Invalid G.P') 
@@ -195,10 +196,6 @@ document.getElementById('103Input').addEventListener('input', function (e) {
         document.getElementById(`g`).innerHTML=('Probation')  
     } else if (grade <= 1.00) {
         document.getElementById(`g`).innerHTML=('Voluntarily -Withdrawal')  
-     }
- }
-
-
-
-//  ************************************ g.p Grade*************************//
-//  document.getElementById(`gp`).innerHTML=g
+     }else if (grade = 'NaN') {
+        document.getElementById(`g`).innerHTML=('Oops! Sorry Invalid Input') 
+     }}
